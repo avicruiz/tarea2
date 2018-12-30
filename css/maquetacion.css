@@ -1,0 +1,467 @@
+/***** CSS que maqueta la web *****/
+/* Definición de los estilos que implementan la web de la práctica */
+/* He intentado que sea responsive para dispositivos móviles */
+
+/* Inicialización de los principales items, controlo desde un principio sus valores y así no tengo resultados inesperados.
+	Incluyo más tags de los usados en la implementación */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Reseteo para navegadores antiguos. He tenido problemas al probar la página en un PC obsoleto */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Cuerpo de la página */
+body {
+    background: #C9C8C5 url('../images/bg.png');
+    color: #000305;
+    font-size: 87.5%; /* equivale 14px */
+    font-family: Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* HTML5 tags */
+header, section, footer, aside, nav, article, figure {
+    display: block;
+}
+
+/* Clase para el cuerpo de la página */
+.body {
+	clear: both; 
+	margin: 0 auto; 
+	width: 80%;
+}
+
+img.right figure.right {
+	float: right; 
+	margin: 0 0 2em 2em;
+}
+
+img.left, figure.left {
+	float: right; 
+	margin: 0 0 2em 2em;
+}
+
+/* Título de la web */
+#titulo {
+	width: 300px;
+	height: 100px;
+	background: white;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+#titulo:hover {
+  width: 90%;
+}
+
+/* Header */
+#banner {
+    margin: 0 auto;
+    padding: 2.5em 0 0 0;
+	height: auto;
+	width: 72%;
+}
+
+/* Banner */
+#banner h1 {
+	font-size: 3.571em; 
+	line-height: .6;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #00A2E8;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+    width: 72%;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #000305;
+    text-shadow: none;
+}
+
+#banner h1 strong {
+	font-size: 0.36em; 
+	font-weight: normal;
+}
+
+/* Headings, definición del tamaño personalizado */
+h2 {
+	font-size: 1.571em
+}	/* 22px */
+h3 {
+	font-size: 1.429em
+}	/* 20px */
+h4 {
+	font-size: 1.286em
+}	/* 18px */
+h5 {
+	font-size: 1.143em
+}	/* 16px */
+h6 {
+	font-size: 1em
+}	/* 14px */
+
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+}
+
+h2.estilo_titulo {
+	color:#00A2E8;	
+	font-weight: bold;
+}
+
+h3.estilo_titulo {
+    font-size: 1.229em;
+    color: #bcb3b3;
+}
+
+h5.estilo_titulo {
+	font-style: italic;
+}
+
+/* Barra de navegación */
+#banner nav {
+    background: #000305;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    width: 55%;
+    border-radius: 5px;
+}
+
+#banner nav ul {
+	list-style: none; 
+	margin: 0 auto; 
+	width: 800px;
+}
+
+#banner nav li {
+	float: left; 
+	display: inline; 
+	margin: 0;
+}
+
+#banner nav a:link, #banner nav a:visited {
+    color: #FFFFFF;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
+    background: #F5F4EF;
+    color: #000305;
+    text-shadow: none !important;
+}
+
+#banner nav li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Elemento introducción que da la bienvenida con el logo */
+#introduccion {
+    background: #FFFFFF;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px;
+    width: 72%;
+    border-radius: 10px;
+}
+
+#introduccion figure {
+    border: 0px solid #eee;
+    float: right;
+    margin: 0.786em 2em 0 5em;
+    width: 248px;
+}
+
+#introduccion figure img {
+	display: block; 
+	float: right;
+}
+
+#introduccion h2 {
+	color: #C9C8C5; 
+	font-size: 1.714em; 
+	margin-bottom: 0.333em;
+	margin-top: 20px;
+}
+
+#introduccion h3 {
+	font-size: 1.429em; 
+	margin-bottom: .5em;
+}
+
+#introduccion h3 a:link, #introduccion h3 a:visited {
+	color: #000305; 
+	text-decoration: none;
+}
+
+#introduccion h3 a:hover, #introduccion h3 a:active {
+	color: #FFFFFF;
+}
+
+/* Contenidos centrales de la web */
+#contenido, #tecnologia {
+    background: #FFFFFF;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px 20px;
+    width: 72%;
+    border-radius: 10px;
+}
+
+/* Definición de las anclas */
+a {
+	outline: 0;
+}
+
+a img {
+	border: 0px; 
+	text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #000305;
+    padding: 0 1px;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    background-color: #F5F4EF;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* Estilo parágrafo */
+p {
+	margin-bottom: 1.143em;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+::selection {
+	background: #F6CF74; 
+	color: #FFFFFF;
+}
+
+/* Listas ordenadas y no numeradas */
+ul {
+    list-style: outside disc;
+    margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 1em 0 1.5em 1.5em;
+}
+
+li {}
+
+/* Bloque donde defino los estilos para los anuncios (posts) que publicaré */
+#lista_anuncios, #lista_anuncios_informatica, #lista_anuncios_fotografia {
+	list-style: none; 
+	margin: 0;
+}
+
+#lista_anuncios .anuncio, #lista_anuncios_informatica .anuncio, #lista_anuncios_fotografia .anuncio {
+	padding-left: 200px; 
+	position: relative;
+}
+
+#lista_anuncios footer, #lista_anuncios_informatica footer, #lista_anuncios_fotografia footer {
+    left: 10px;
+    position: absolute;
+    top: 1.5em;
+    width: 190px;
+}
+
+#lista_anuncios .anuncio:hover, #lista_anuncios_informatica .anuncio:hover, #lista_anuncios_fotografia .anuncio:hover {
+    background: #F5F4EF;
+    color: #000305;
+}
+
+/* Estilo para zonas entrecomilladas */
+blockquote {
+	font-style: italic;
+}
+
+/* Definición del estilo de las tablas */
+table {
+	margin: .5em auto 1.5em auto; 
+	width: 72%; 
+	border: 1px solid;
+}
+
+/* Estilo para la tabla específica del formulario de contacto */
+#tformulario {
+	margin: 0; 
+	width: 42%; 
+	border: 0px solid;
+}
+
+/* Cabecera */
+thead th {
+	padding: .5em .4em; 
+	text-align: left; 
+	border: 1px solid;
+	text-align: center;
+}
+
+thead td {}
+
+/* Cuerpo */
+tbody td {
+	padding: .5em .4em; 
+	border: 1px solid;
+	vertical-align: middle;
+	text-align: center;
+	outline: auto;
+}
+
+/* estilo especial para tabla que formatea un formulario */
+#tformulario td {
+	padding: .5em .4em; 
+	border: 0px solid;
+	vertical-align: middle;
+	text-align: left;
+	outline: none;
+}
+
+tbody th {}
+
+tbody .alt td {}
+
+tbody .alt th {}
+
+/* Pie de la tabla */
+tfoot th { 
+	border: 1px solid;
+	text-align: center;
+}
+
+tfoot td { 
+	border: 1px solid;
+	text-align: center;
+}
+
+/* Detail y summary, estilos personalizados */
+#desplegable {
+    background: #FFFFFF;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px 20px;
+    width: 72%;
+    border-radius: 10px;
+}
+
+details {
+    padding: 15px;
+    background-color: #f6f7f8;
+}
+
+.entrada_detail {
+	padding-left: 50px; 
+	position: relative;
+}
+
+summary {
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+
+/* Definición de la región final, descripción y referencia al inicio de la web */
+#descripcion {
+    background: #FFFFFF;
+    font-style: normal;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    width: 72%;
+    border-radius: 10px;
+}
+
+#descripcion .primaria {
+	float: left; 
+	width: 165px;
+}
+
+#descripcion .primaria strong {
+	color: #C64350; 
+	display: block; 
+	font-size: 1.286em;
+}
+
+#descripcion .photo {
+	float: left; 
+	margin: 5px 20px;
+}
+
+#descripcion .url:link, #descripcion .url:visited {
+	text-decoration: none;
+}
+	
+#descripcion .secundaria {
+	float: right; 
+	width: 500px;
+}
+
+/* Área del formulario de contacto */
+#formulario {
+    background: #FFFFFF;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px;
+    width: 72%;
+    border-radius: 10px;
+}
+
+/* Área del media video */
+#media_video {
+    background: #FFFFFF;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px;
+    width: 72%;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+#contenido_pie_pagina {
+    background: #E0E0E0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px;
+    width: 72%;
+    border-radius: 10px;
+}
